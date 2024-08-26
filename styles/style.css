@@ -1,0 +1,307 @@
+/* Reset general de CSS y que establece el estilo general de la página */
+*{
+   
+    /* Se resetea el margen del elemento */
+    margin: 1;
+    /* Se resetea el área de relleno del elemento */
+    padding: 0;  
+    /* Se establece el color del fondo */
+    background-color:#e5e5e5;
+    /* Se establece el color del texto */
+    color:#0a3871;
+    /* Se establece la fuente del texto */
+    font-family: Arial, Helvetica, sans-serif;
+    /* Se establece el grosor de la letra */
+    font-weight: normal;
+    /* Se establece el tamaño de la letra de 1rem equivalente a 16px */
+    font-size: 1rem;
+    /* Se establece el espaciado entre líneas */
+    line-height: normal;
+       
+}
+
+/* Estilo de Logo del encabezado de página */
+.header_logo {
+
+    /* Se establece el área de relleno la parte superior del logo */
+    padding-top: 0.8rem;
+    /* Se establece el margen izquierdo del logo */
+    margin-left: 0.8rem;
+    /* Se establece el tamaño del logo con respecto a su contenedor, para que no lo sobrepase */
+    width: 10%;
+
+}
+
+/* Estilo de título del encabezado de página */
+.header_titulo{
+
+    /* Se establece el área de relleno para los cuatro lados del elemento */
+    padding: 1rem 2rem 2rem 1rem;
+    /* Se establece el tamaño de la fuente del título */
+    font-size: 2rem;
+    /* Se centra el título */
+    text-align: center;
+       
+}
+
+/* Estilo sector central de la página (main) */
+main{
+
+    /* Se utiliza la propiedad flex para los objetos contenidos en el sector central de la página y poder alinearlos */
+    display: flex;
+    /* Se da un margen a los objetos */
+    margin-left: 4rem;
+    /* Se alinean los objetos desde el inicio del contenedor */
+    justify-content: center;
+    /* Se deja espacio entre las cajas de texto */
+    gap: 4rem;
+    
+}
+
+/* Estilo de la caja de texto a encriptar */
+.caja_texto{
+
+    /* Se quita el borde de la caja */
+    border: none;
+    /* Se define el color de fondo de la caja igual al fondo de la página */
+    background-color: #e5e5e5; 
+    /* Se define el color del texto que se escriba en la caja */
+    color: #0a3871;
+    /* Pasamos el texto ingresado a minúscula */    
+    text-transform: lowercase;
+    /* Se define el tamaño de la fuente de texto */
+    font-size: 1rem;
+    /* Se establece la fuente del texto */
+    font-family: Arial, Helvetica, sans-serif;
+    /* Se quita la característica para redimencionamiento manual */
+    resize: none;
+    
+}
+
+/* Se define el color del texto que se ve previamente en la caja */
+::placeholder { 
+
+    color: #0a3871;
+
+}
+
+/* Se elimina el marco o borde de la caja que aparece al seleccionar el área para escribir */
+.caja_texto:focus{
+
+    outline: none;
+
+}
+
+/* Estilo del párrafo bajo la caja de texto */
+.texto_bajo_caja{
+
+    /* Se define el tamaño de la fuente de texto */
+   font-size: 0.8rem;
+   /* Se establece el área de relleno para los cuatro lados del elemento */
+   padding: 6rem 0 1rem 0;
+
+}
+
+/* Estilo y caracteristigas generales de los botones */
+.presentacion_botones{
+
+   /* Se utiliza la propiedad flex para los objetos contenidos en el sector central de la página y poder alinearlos */
+   display: flex;
+   /* Se centran los objetos */
+   justify-content: center;
+   /* Se deja espacio entre las cajas de texto */
+   gap: 1rem;
+    
+}
+
+
+/* Estilo y caracteristicas de boton encriptar */
+.presentacion_boton_encripta{
+    
+    /* Se establece el color de fondo de la botonera */
+    background-color: #0a3871;
+    /* Se establece el color del texto */
+    color: #ffffff;
+    /* Se establece ancho del elemento */
+    width: 14rem;
+    /* Se establece la ubicación del texto dentro del botón */
+    text-align: center;
+    /* Se definen las esquinas del botón */
+    border-radius: 1rem;
+    /* Se define el tamaño del texto*/
+    font-size: 1rem;
+    /* Se establede el área de relleno alrededor del elemento */
+    padding: 5% 3% 5% 3%;
+    /* Se define la apariencia del cursor al pasar sobre el botón como una mano */
+    cursor: pointer;
+
+}
+
+/* Se define un estilo distinto al pasar sobre boton encripta */
+.presentacion_boton_encripta:hover{
+   
+    /* Se establece el color de fondo de la botonera */
+    background-color: #8aacdf;
+    /* Se establece el color del texto */
+    color: #0a3871;
+    /* Se establece el grosor del texto por defecto */
+    font-weight: bold;
+
+}
+
+/* Estilo y caracteristicas de boton desencriptar */
+.presentacion_boton_desencripta{
+    
+    /* Se establece el color de fondo de la botonera */
+    background-color: #d8dfe8;
+    /* Se establece el color del texto */
+    color: #0a3871;
+    /* Se establece ancho del elemento */
+    width: 15rem;
+    /* Se establece la ubicación del texto dentro del botón */
+    text-align: center;
+    /* Se definen las esquinas del botón */
+    border-radius: 1rem;
+    /* Se define el tamaño del texto*/
+    font-size: 1rem;
+    /* Se establede el área de relleno alrededor del elemento */
+    padding: 5% 3% 5% 3%;
+    /* Se define la apariencia del cursor al pasar sobre el botón como una mano */
+    cursor: pointer;
+
+}
+
+/* Se define un estilo distinto al pasar sobre boton desencriptar */
+.presentacion_boton_desencripta:hover{
+  
+    /* Se establece el color de fondo de la botonera */
+    background-color: #8aacdf;
+    /* Se establece el color del texto */
+    color: #d8dfe8;
+    /* Se establece el grosor del texto por defecto */
+    font-weight: bold;
+
+}
+
+/* Estilo de la caja de texto del mensaje */
+.caja_mensaje{
+
+    /* Se quita el borde de la caja */
+    border: none;
+    /* Se define el color de fondo de la caja distinto al de la página */
+    background: #ffffff;
+    /* Se define el color del texto */
+    color: #0a3871;
+    /* Se redondean los bordes */
+    border-radius: 1rem;
+    /* Se establede el área de relleno idéntica alrededor del elemento */
+    padding: 1%;
+    /* Se quita la característica para redimencionamiento manual */
+    resize: none;
+
+}
+
+/* Se elimina el marco o borde de la caja que aparece al seleccionar el área para escribir */
+.caja_mensaje:focus{
+
+    outline: none;
+
+}
+
+/* Estilo y caracteristicas de boton copiar */
+.presentacion_boton_copiar{
+
+    /* Se establece el color de fondo de la botonera */
+    background-color: #d8dfe8;
+    /* Se establece el color del texto */
+    color: #0a3871;
+    /* Se establece ancho del elemento */
+    width: 8rem;
+    /* Se establece la ubicación del texto dentro del botón */
+    text-align: center;
+    /* Se definen las esquinas del botón */
+    border-radius: 1rem;
+    /* Se define el tamaño del texto*/
+    font-size: 1rem;
+    /* Se establede el área de relleno alrededor del elemento */
+    padding: 5% 3% 5% 3%;
+    /* Se define la apariencia del cursor al pasar sobre el botón como una mano */
+    cursor: pointer;
+    
+}
+
+/* Se define un estilo distinto al pasar sobre boton desencriptar */
+.presentacion_boton_copiar:hover{
+
+    /* Se establece el color de fondo de la botonera */
+    background-color: #989ea5;
+    /* Se establece el color del texto */
+    color: #d8dfe8;
+    /* Se establece el grosor del texto por defecto */
+    font-weight: bold;
+}
+
+/* Se establece un estilo para el pie de página */
+.pie_pagina{
+
+    /* Se establece el color del texto */
+    color: #0d98ba;
+    /* Se establece el tamaño de la fuente del texto*/
+    font-size: 1rem;
+    /* Se establede el área de relleno idéntica alrededor del elemento */
+    padding: 2%;
+    /* Se centra el texto */
+    text-align: center;
+    /* Se establece el grosor del texto por defecto */
+    font-weight: normal;
+    
+}
+
+.boton_invisible{
+
+    display: flex;
+    visibility: hidden;
+    background-color: #ffffff;
+    justify-content: center;
+    
+}
+
+.seccion_visualiza_mensaje{
+    /*border: 0.5rem solid;*/
+    background-color: #ffffff;
+    border-radius: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+       
+}
+
+.sin_mensaje{
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    
+}
+
+.titulo_ningun_mensaje{
+    /* Se define el tamaño de la fuente de texto */
+    font-size: 1rem;
+    text-align: center;
+    font-weight: bold;
+    padding: 0 20% 0% 20%;
+    background-color: #ffffff;
+}
+
+.parrafo_ingresa_texto{
+    /* Se define el tamaño de la fuente de texto */
+    font-size: 0.8rem;
+    text-align: center;
+    padding: 0 20% 0% 20%;
+    background-color: #ffffff;
+}
+
+.imagen_mirando{
+    background-color: #ffffff;
+    max-width:  90%;           
+
+}

@@ -1,0 +1,131 @@
+ <!-- Se indica la versión a utilizar HTML 5.0 -->
+<!DOCTYPE html>
+
+
+<!-- Inicio, se indica el lenguaje a utilizar HTML y el idioma Español-Chile -->
+<html lang="es-cl">
+
+     <!-- Inicio de la cabecera de la página -->
+    <head>
+        
+        <!-- Se indica la codificación de caracteres a utilizar UTF-8 -->
+        <meta charset="UTF-8">
+      
+        <!-- Se establece la vista de compatibilidad -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      
+        <!-- Control del ancho de la página, para visualización en distintos dispositivos -->
+        <meta name="viewport" content="width=device-width, inicial-scale=1.0">
+
+        <!-- Título de la página -->
+        <title>Encriptador de Texto</title>
+
+        <!-- Vinculación con archivo CSS de nombre style.css -->
+        <link rel="stylesheet" href="./styles/style.css">
+
+        <!-- Se agrega una imagen para que se vea en la pestaña del navegador -->
+        <link rel="icon" href="./assets/logo-aluraespanhol.svg" type="image/png">
+        <!-- Imagen logo-aluraespanhol.svg, fue obtenida desde url: https://app.aluracursos.com/dashboard -->
+
+    </head> 
+    <!-- Fin de la cabecera de la página --> 
+
+    <!-- Inicio del cuerpo de la página -->
+    <body>
+            
+        <!-- Inicio encabezado de la página -->
+        <header>
+            
+            <!-- Se agrega el logo de Alura en la parte superior de la página y un texto descriptivo -->
+            <img class="header_logo" src="./assets/Logo.png" alt="Logo de Alura" >
+            
+            <!-- Título del encabezado de la página -->
+            <h1 class="header_titulo">Encriptador de Texto</h1>
+        
+        </header>
+        <!-- Fin encabezado de la página -->
+
+        <!-- Inicio parte principal de la página -->
+        <main>
+                    
+            <!-- Inicio de sección texto a encriptar/desencriptar -->
+            <section id="seccionIngresoTexto"> 
+                
+                <!-- Elemento para edición de texto multilínea donde se ingresará el mensaje a encriptar -->
+                <textarea id="cajaTexto" class="caja_texto" rows="10" cols="30" placeholder="ingrese el texto aquí"></textarea>
+            
+                <!-- Párrafo bajo la caja de texto -->
+                <p class="texto_bajo_caja">Sólo letras minúsculas y sin acento.</p>
+                
+                <div class="presentacion_botones">
+
+                    <!-- Botón para Encriptar -->
+                    <button id="encripta" class="presentacion_boton_encripta" onclick="botonEncriptar()">Encripta</button>
+                
+                    <!-- Botón para Desencriptar -->
+                    <button id="desencripta" class="presentacion_boton_desencripta" onclick="botonDesencriptar()">Desencripta</button>
+               
+                </div>
+
+            </section>
+            <!-- Fin de sección texto a encriptar -->
+                    
+            <!-- Inicio de sección para visualizar el texto encriptado/desencriptado -->
+            <section id="seccionVisualizaMensaje" class="seccion_visualiza_mensaje">
+                                         
+                <!-- Elemento para edición de texto multilínea donde se mostrará el mensaje -->
+                <textarea id="cajaMensaje" class="caja_mensaje" rows="5" cols="10"></textarea>
+                
+                <div id="sinMensaje" class="sin_mensaje">
+                    
+                    <!-- Imagen de muñeco mirando -->
+                    <img class="imagen_mirando" src="./assets/Muneco.png" alt="Persona Mirando">
+                    
+                    <!-- Titulo cuando no se ingresan mensajes -->
+                    <h2 class="titulo_ningun_mensaje">Ningún mensaje fue encontrado</h2>
+
+                    <!-- Parraro cuando no se ingresan mensajes para encriptar o desencriptar -->
+                    <p class="parrafo_ingresa_texto">Ingresa el texto que desees encriptar o desencriptar</p>
+
+                </div>  
+                
+                <div id="botoneraVisualizaTexto" class="boton_invisible">
+
+                    <!-- Botón para copiar texto encriptado -->
+                    <button class="presentacion_boton_copiar" onclick="copiar()">Copiar</button>
+
+                </div>
+
+            </section>  
+            <!-- Fin de sección para el texto encriptado -->
+
+        </main>
+        <!-- Fin parte principal de la página -->
+
+        <footer class="pie_pagina">
+        
+            <!-- Párrafo -->
+            <p>Página desarrollada por Eric Correa.</p>
+            
+            <!-- Se agrega el año y una frase de Copyright utilizando javascript para obtener el año actual -->
+            <script type="text/javascript">
+    
+                copyright=new Date();
+                
+                update=copyright.getFullYear();
+                
+                document.write("© 2024 - " + update + " " + "Encriptador de Texto 1.0.5.");
+                
+            </script>
+                   
+        </footer>
+        <!-- Fin pie de página -->
+
+    </body>
+    <!-- Fin del cuerpo de la página -->
+
+    <!-- Vinculación con archivo JavaScript de nombre script.js -->
+    <script src="./script/script.js"></script>
+
+<!-- Fin -->
+</html>
